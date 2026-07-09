@@ -1,0 +1,3170 @@
+{
+  "version": "0.1.0",
+  "name": "Global Health Burden Demo - JupyterLite, JupyterGIS, GeoLibre",
+  "mapView": {
+    "center": [
+      8.0,
+      12.0
+    ],
+    "zoom": 1.15,
+    "bearing": 0,
+    "pitch": 0
+  },
+  "basemapStyleUrl": "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+  "basemapVisible": true,
+  "basemapOpacity": 1,
+  "layers": [
+    {
+      "id": "layer_malaria",
+      "name": "Malaria DALY rate (synthetic demo, 2021)",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": true,
+      "opacity": 0.85,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "circleRadius": 8,
+        "fillColor": "#ef4444",
+        "strokeColor": "#111827",
+        "strokeWidth": 1,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 0.72,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0
+      },
+      "metadata": {
+        "warning": "Synthetic software demonstration data, not IHME estimates.",
+        "source_workflow": "Replace with a licensed IHME/GHDx export processed by scripts/prepare_gbd_for_lite.py."
+      },
+      "geojson": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -98.5795,
+                39.8283
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "United States of America",
+              "iso3": "USA",
+              "region_name": "North America",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 0.15,
+              "lower": 0.13,
+              "upper": 0.17,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "0.15 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -102.5528,
+                23.6345
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Mexico",
+              "iso3": "MEX",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 11.47,
+              "lower": 10.09,
+              "upper": 13.08,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "11.47 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -51.9253,
+                -14.235
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Brazil",
+              "iso3": "BRA",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 10.7,
+              "lower": 9.42,
+              "upper": 12.2,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "10.7 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -74.2973,
+                4.5709
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Colombia",
+              "iso3": "COL",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 11.03,
+              "lower": 9.71,
+              "upper": 12.57,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "11.03 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -75.0152,
+                -9.19
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Peru",
+              "iso3": "PER",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 10.26,
+              "lower": 9.03,
+              "upper": 11.7,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "10.26 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -3.436,
+                55.3781
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "United Kingdom",
+              "iso3": "GBR",
+              "region_name": "Europe",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 0.33,
+              "lower": 0.29,
+              "upper": 0.38,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "0.33 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                2.2137,
+                46.2276
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "France",
+              "iso3": "FRA",
+              "region_name": "Europe",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 0.29,
+              "lower": 0.26,
+              "upper": 0.33,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "0.29 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.6753,
+                9.082
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Nigeria",
+              "iso3": "NGA",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 66.3,
+              "lower": 58.34,
+              "upper": 75.58,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "66.3 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                40.4897,
+                9.145
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Ethiopia",
+              "iso3": "ETH",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 63.65,
+              "lower": 56.01,
+              "upper": 72.56,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "63.65 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                22.9375,
+                -30.5595
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "South Africa",
+              "iso3": "ZAF",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 64.97,
+              "lower": 57.17,
+              "upper": 74.07,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "64.97 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.9062,
+                -0.0236
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Kenya",
+              "iso3": "KEN",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 64.31,
+              "lower": 56.59,
+              "upper": 73.31,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "64.31 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                21.7587,
+                -4.0383
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Democratic Republic of the Congo",
+              "iso3": "COD",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 66.96,
+              "lower": 58.92,
+              "upper": 76.33,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "66.96 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                30.8025,
+                26.8206
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Egypt",
+              "iso3": "EGY",
+              "region_name": "North Africa and Middle East",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 3.74,
+              "lower": 3.29,
+              "upper": 4.26,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "3.74 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                35.2433,
+                38.9637
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "T\u00fcrkiye",
+              "iso3": "TUR",
+              "region_name": "North Africa and Middle East",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 4.02,
+              "lower": 3.54,
+              "upper": 4.58,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "4.02 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                78.9629,
+                20.5937
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "India",
+              "iso3": "IND",
+              "region_name": "South Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 22.5,
+              "lower": 19.8,
+              "upper": 25.65,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "22.5 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                69.3451,
+                30.3753
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Pakistan",
+              "iso3": "PAK",
+              "region_name": "South Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 22.28,
+              "lower": 19.61,
+              "upper": 25.4,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "22.28 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                90.3563,
+                23.685
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Bangladesh",
+              "iso3": "BGD",
+              "region_name": "South Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 21.4,
+              "lower": 18.83,
+              "upper": 24.4,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "21.4 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                104.1954,
+                35.8617
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "China",
+              "iso3": "CHN",
+              "region_name": "East Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 0.59,
+              "lower": 0.52,
+              "upper": 0.67,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "0.59 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                138.2529,
+                36.2048
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Japan",
+              "iso3": "JPN",
+              "region_name": "High-income Asia Pacific",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 0.08,
+              "lower": 0.07,
+              "upper": 0.09,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "0.08 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                113.9213,
+                -0.7893
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Indonesia",
+              "iso3": "IDN",
+              "region_name": "Southeast Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 26.96,
+              "lower": 23.72,
+              "upper": 30.73,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "26.96 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                121.774,
+                12.8797
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Philippines",
+              "iso3": "PHL",
+              "region_name": "Southeast Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 24.21,
+              "lower": 21.3,
+              "upper": 27.6,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "24.21 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                133.7751,
+                -25.2744
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Australia",
+              "iso3": "AUS",
+              "region_name": "Oceania",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 34.07,
+              "lower": 29.98,
+              "upper": 38.84,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "34.07 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                143.9555,
+                -6.315
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Papua New Guinea",
+              "iso3": "PNG",
+              "region_name": "Oceania",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 34.4,
+              "lower": 30.27,
+              "upper": 39.22,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "34.4 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -72.2852,
+                18.9712
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Haiti",
+              "iso3": "HTI",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Malaria",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 10.7,
+              "lower": 9.42,
+              "upper": 12.2,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "10.7 DALYs per 100,000 (synthetic demo)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "layer_lower_respiratory_infections",
+      "name": "Lower respiratory infections DALY rate (synthetic demo, 2021)",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": false,
+      "opacity": 0.85,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "circleRadius": 7,
+        "fillColor": "#f59e0b",
+        "strokeColor": "#111827",
+        "strokeWidth": 1,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 0.72,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0
+      },
+      "metadata": {
+        "warning": "Synthetic software demonstration data, not IHME estimates.",
+        "source_workflow": "Replace with a licensed IHME/GHDx export processed by scripts/prepare_gbd_for_lite.py."
+      },
+      "geojson": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -98.5795,
+                39.8283
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "United States of America",
+              "iso3": "USA",
+              "region_name": "North America",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 14.98,
+              "lower": 13.18,
+              "upper": 17.08,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "14.98 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -102.5528,
+                23.6345
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Mexico",
+              "iso3": "MEX",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 21.29,
+              "lower": 18.74,
+              "upper": 24.27,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "21.29 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -51.9253,
+                -14.235
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Brazil",
+              "iso3": "BRA",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 19.87,
+              "lower": 17.49,
+              "upper": 22.65,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "19.87 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -74.2973,
+                4.5709
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Colombia",
+              "iso3": "COL",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 20.48,
+              "lower": 18.02,
+              "upper": 23.35,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "20.48 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -75.0152,
+                -9.19
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Peru",
+              "iso3": "PER",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 19.06,
+              "lower": 16.77,
+              "upper": 21.73,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "19.06 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -3.436,
+                55.3781
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "United Kingdom",
+              "iso3": "GBR",
+              "region_name": "Europe",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 15.02,
+              "lower": 13.22,
+              "upper": 17.12,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "15.02 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                2.2137,
+                46.2276
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "France",
+              "iso3": "FRA",
+              "region_name": "Europe",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 13.06,
+              "lower": 11.49,
+              "upper": 14.89,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "13.06 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.6753,
+                9.082
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Nigeria",
+              "iso3": "NGA",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 45.24,
+              "lower": 39.81,
+              "upper": 51.57,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "45.24 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                40.4897,
+                9.145
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Ethiopia",
+              "iso3": "ETH",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 43.43,
+              "lower": 38.22,
+              "upper": 49.51,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "43.43 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                22.9375,
+                -30.5595
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "South Africa",
+              "iso3": "ZAF",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 44.34,
+              "lower": 39.02,
+              "upper": 50.55,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "44.34 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.9062,
+                -0.0236
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Kenya",
+              "iso3": "KEN",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 43.88,
+              "lower": 38.61,
+              "upper": 50.02,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "43.88 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                21.7587,
+                -4.0383
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Democratic Republic of the Congo",
+              "iso3": "COD",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 45.69,
+              "lower": 40.21,
+              "upper": 52.09,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "45.69 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                30.8025,
+                26.8206
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Egypt",
+              "iso3": "EGY",
+              "region_name": "North Africa and Middle East",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 20.97,
+              "lower": 18.45,
+              "upper": 23.91,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "20.97 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                35.2433,
+                38.9637
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "T\u00fcrkiye",
+              "iso3": "TUR",
+              "region_name": "North Africa and Middle East",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 22.5,
+              "lower": 19.8,
+              "upper": 25.65,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "22.5 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                78.9629,
+                20.5937
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "India",
+              "iso3": "IND",
+              "region_name": "South Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 49.81,
+              "lower": 43.83,
+              "upper": 56.78,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "49.81 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                69.3451,
+                30.3753
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Pakistan",
+              "iso3": "PAK",
+              "region_name": "South Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 49.33,
+              "lower": 43.41,
+              "upper": 56.24,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "49.33 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                90.3563,
+                23.685
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Bangladesh",
+              "iso3": "BGD",
+              "region_name": "South Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 47.39,
+              "lower": 41.7,
+              "upper": 54.02,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "47.39 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                104.1954,
+                35.8617
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "China",
+              "iso3": "CHN",
+              "region_name": "East Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 15.4,
+              "lower": 13.55,
+              "upper": 17.56,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "15.4 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                138.2529,
+                36.2048
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Japan",
+              "iso3": "JPN",
+              "region_name": "High-income Asia Pacific",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 9.08,
+              "lower": 7.99,
+              "upper": 10.35,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "9.08 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                113.9213,
+                -0.7893
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Indonesia",
+              "iso3": "IDN",
+              "region_name": "Southeast Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 32.01,
+              "lower": 28.17,
+              "upper": 36.49,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "32.01 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                121.774,
+                12.8797
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Philippines",
+              "iso3": "PHL",
+              "region_name": "Southeast Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 28.75,
+              "lower": 25.3,
+              "upper": 32.77,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "28.75 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                133.7751,
+                -25.2744
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Australia",
+              "iso3": "AUS",
+              "region_name": "Oceania",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 36.5,
+              "lower": 32.12,
+              "upper": 41.61,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "36.5 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                143.9555,
+                -6.315
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Papua New Guinea",
+              "iso3": "PNG",
+              "region_name": "Oceania",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 36.86,
+              "lower": 32.44,
+              "upper": 42.02,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "36.86 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -72.2852,
+                18.9712
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Haiti",
+              "iso3": "HTI",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Lower respiratory infections",
+              "cause_group": "Communicable, maternal, neonatal, and nutritional diseases",
+              "val": 19.87,
+              "lower": 17.49,
+              "upper": 22.65,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "19.87 DALYs per 100,000 (synthetic demo)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "layer_ischemic_heart_disease",
+      "name": "Ischemic heart disease DALY rate (synthetic demo, 2021)",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": false,
+      "opacity": 0.85,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "circleRadius": 7,
+        "fillColor": "#7c3aed",
+        "strokeColor": "#111827",
+        "strokeWidth": 1,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 0.72,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0
+      },
+      "metadata": {
+        "warning": "Synthetic software demonstration data, not IHME estimates.",
+        "source_workflow": "Replace with a licensed IHME/GHDx export processed by scripts/prepare_gbd_for_lite.py."
+      },
+      "geojson": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -98.5795,
+                39.8283
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "United States of America",
+              "iso3": "USA",
+              "region_name": "North America",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 75.88,
+              "lower": 66.77,
+              "upper": 86.5,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "75.88 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -102.5528,
+                23.6345
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Mexico",
+              "iso3": "MEX",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 78.62,
+              "lower": 69.19,
+              "upper": 89.63,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "78.62 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -51.9253,
+                -14.235
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Brazil",
+              "iso3": "BRA",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 73.38,
+              "lower": 64.57,
+              "upper": 83.65,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "73.38 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -74.2973,
+                4.5709
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Colombia",
+              "iso3": "COL",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 75.63,
+              "lower": 66.55,
+              "upper": 86.22,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "75.63 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -75.0152,
+                -9.19
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Peru",
+              "iso3": "PER",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 70.39,
+              "lower": 61.94,
+              "upper": 80.24,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "70.39 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -3.436,
+                55.3781
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "United Kingdom",
+              "iso3": "GBR",
+              "region_name": "Europe",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 91.25,
+              "lower": 80.3,
+              "upper": 104.02,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "91.25 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                2.2137,
+                46.2276
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "France",
+              "iso3": "FRA",
+              "region_name": "Europe",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 79.31,
+              "lower": 69.79,
+              "upper": 90.41,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "79.31 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.6753,
+                9.082
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Nigeria",
+              "iso3": "NGA",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 93.6,
+              "lower": 82.37,
+              "upper": 106.7,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "93.6 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                40.4897,
+                9.145
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Ethiopia",
+              "iso3": "ETH",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 89.86,
+              "lower": 79.08,
+              "upper": 102.44,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "89.86 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                22.9375,
+                -30.5595
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "South Africa",
+              "iso3": "ZAF",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 91.73,
+              "lower": 80.72,
+              "upper": 104.57,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "91.73 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.9062,
+                -0.0236
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Kenya",
+              "iso3": "KEN",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 90.79,
+              "lower": 79.9,
+              "upper": 103.5,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "90.79 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                21.7587,
+                -4.0383
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Democratic Republic of the Congo",
+              "iso3": "COD",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 94.54,
+              "lower": 83.2,
+              "upper": 107.78,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "94.54 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                30.8025,
+                26.8206
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Egypt",
+              "iso3": "EGY",
+              "region_name": "North Africa and Middle East",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 111.82,
+              "lower": 98.4,
+              "upper": 127.47,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "111.82 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                35.2433,
+                38.9637
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "T\u00fcrkiye",
+              "iso3": "TUR",
+              "region_name": "North Africa and Middle East",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 119.97,
+              "lower": 105.57,
+              "upper": 136.77,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "119.97 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                78.9629,
+                20.5937
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "India",
+              "iso3": "IND",
+              "region_name": "South Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 128.54,
+              "lower": 113.12,
+              "upper": 146.54,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "128.54 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                69.3451,
+                30.3753
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Pakistan",
+              "iso3": "PAK",
+              "region_name": "South Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 127.3,
+              "lower": 112.02,
+              "upper": 145.12,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "127.3 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                90.3563,
+                23.685
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Bangladesh",
+              "iso3": "BGD",
+              "region_name": "South Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 122.3,
+              "lower": 107.62,
+              "upper": 139.42,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "122.3 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                104.1954,
+                35.8617
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "China",
+              "iso3": "CHN",
+              "region_name": "East Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 91.89,
+              "lower": 80.86,
+              "upper": 104.75,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "91.89 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                138.2529,
+                36.2048
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Japan",
+              "iso3": "JPN",
+              "region_name": "High-income Asia Pacific",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 42.37,
+              "lower": 37.29,
+              "upper": 48.3,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "42.37 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                113.9213,
+                -0.7893
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Indonesia",
+              "iso3": "IDN",
+              "region_name": "Southeast Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 106.7,
+              "lower": 93.9,
+              "upper": 121.64,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "106.7 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                121.774,
+                12.8797
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Philippines",
+              "iso3": "PHL",
+              "region_name": "Southeast Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 95.84,
+              "lower": 84.34,
+              "upper": 109.26,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "95.84 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                133.7751,
+                -25.2744
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Australia",
+              "iso3": "AUS",
+              "region_name": "Oceania",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 80.04,
+              "lower": 70.44,
+              "upper": 91.25,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "80.04 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                143.9555,
+                -6.315
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Papua New Guinea",
+              "iso3": "PNG",
+              "region_name": "Oceania",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 80.81,
+              "lower": 71.11,
+              "upper": 92.12,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "80.81 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -72.2852,
+                18.9712
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Haiti",
+              "iso3": "HTI",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Ischemic heart disease",
+              "cause_group": "Non-communicable diseases",
+              "val": 73.38,
+              "lower": 64.57,
+              "upper": 83.65,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "73.38 DALYs per 100,000 (synthetic demo)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "layer_road_injuries",
+      "name": "Road injuries DALY rate (synthetic demo, 2021)",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": false,
+      "opacity": 0.85,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "circleRadius": 7,
+        "fillColor": "#0ea5e9",
+        "strokeColor": "#111827",
+        "strokeWidth": 1,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 0.72,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0
+      },
+      "metadata": {
+        "warning": "Synthetic software demonstration data, not IHME estimates.",
+        "source_workflow": "Replace with a licensed IHME/GHDx export processed by scripts/prepare_gbd_for_lite.py."
+      },
+      "geojson": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -98.5795,
+                39.8283
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "United States of America",
+              "iso3": "USA",
+              "region_name": "North America",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 14.44,
+              "lower": 12.71,
+              "upper": 16.46,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "14.44 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -102.5528,
+                23.6345
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Mexico",
+              "iso3": "MEX",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 36.52,
+              "lower": 32.14,
+              "upper": 41.63,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "36.52 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -51.9253,
+                -14.235
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Brazil",
+              "iso3": "BRA",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 34.08,
+              "lower": 29.99,
+              "upper": 38.85,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "34.08 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -74.2973,
+                4.5709
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Colombia",
+              "iso3": "COL",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 35.13,
+              "lower": 30.91,
+              "upper": 40.05,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "35.13 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -75.0152,
+                -9.19
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Peru",
+              "iso3": "PER",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 32.69,
+              "lower": 28.77,
+              "upper": 37.27,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "32.69 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -3.436,
+                55.3781
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "United Kingdom",
+              "iso3": "GBR",
+              "region_name": "Europe",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 14.08,
+              "lower": 12.39,
+              "upper": 16.05,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "14.08 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                2.2137,
+                46.2276
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "France",
+              "iso3": "FRA",
+              "region_name": "Europe",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 12.24,
+              "lower": 10.77,
+              "upper": 13.95,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "12.24 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.6753,
+                9.082
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Nigeria",
+              "iso3": "NGA",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 48.88,
+              "lower": 43.01,
+              "upper": 55.72,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "48.88 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                40.4897,
+                9.145
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Ethiopia",
+              "iso3": "ETH",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 46.92,
+              "lower": 41.29,
+              "upper": 53.49,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "46.92 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                22.9375,
+                -30.5595
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "South Africa",
+              "iso3": "ZAF",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 47.9,
+              "lower": 42.15,
+              "upper": 54.61,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "47.9 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.9062,
+                -0.0236
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Kenya",
+              "iso3": "KEN",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 47.41,
+              "lower": 41.72,
+              "upper": 54.05,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "47.41 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                21.7587,
+                -4.0383
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Democratic Republic of the Congo",
+              "iso3": "COD",
+              "region_name": "Sub-Saharan Africa",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 49.37,
+              "lower": 43.45,
+              "upper": 56.28,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "49.37 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                30.8025,
+                26.8206
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Egypt",
+              "iso3": "EGY",
+              "region_name": "North Africa and Middle East",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 27.97,
+              "lower": 24.61,
+              "upper": 31.89,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "27.97 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                35.2433,
+                38.9637
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "T\u00fcrkiye",
+              "iso3": "TUR",
+              "region_name": "North Africa and Middle East",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 30.01,
+              "lower": 26.41,
+              "upper": 34.21,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "30.01 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                78.9629,
+                20.5937
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "India",
+              "iso3": "IND",
+              "region_name": "South Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 46.47,
+              "lower": 40.89,
+              "upper": 52.98,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "46.47 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                69.3451,
+                30.3753
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Pakistan",
+              "iso3": "PAK",
+              "region_name": "South Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 46.02,
+              "lower": 40.5,
+              "upper": 52.46,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "46.02 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                90.3563,
+                23.685
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Bangladesh",
+              "iso3": "BGD",
+              "region_name": "South Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 44.22,
+              "lower": 38.91,
+              "upper": 50.41,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "44.22 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                104.1954,
+                35.8617
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "China",
+              "iso3": "CHN",
+              "region_name": "East Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 21.21,
+              "lower": 18.66,
+              "upper": 24.18,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "21.21 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                138.2529,
+                36.2048
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Japan",
+              "iso3": "JPN",
+              "region_name": "High-income Asia Pacific",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 8.21,
+              "lower": 7.22,
+              "upper": 9.36,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "8.21 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                113.9213,
+                -0.7893
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Indonesia",
+              "iso3": "IDN",
+              "region_name": "Southeast Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 42.64,
+              "lower": 37.52,
+              "upper": 48.61,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "42.64 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                121.774,
+                12.8797
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Philippines",
+              "iso3": "PHL",
+              "region_name": "Southeast Asia",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 38.3,
+              "lower": 33.7,
+              "upper": 43.66,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "38.3 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                133.7751,
+                -25.2744
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Australia",
+              "iso3": "AUS",
+              "region_name": "Oceania",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 38.13,
+              "lower": 33.55,
+              "upper": 43.47,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "38.13 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                143.9555,
+                -6.315
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Papua New Guinea",
+              "iso3": "PNG",
+              "region_name": "Oceania",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 38.49,
+              "lower": 33.87,
+              "upper": 43.88,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "38.49 DALYs per 100,000 (synthetic demo)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -72.2852,
+                18.9712
+              ]
+            },
+            "properties": {
+              "source": "SYNTHETIC_DEMO_NOT_IHME",
+              "location_id": "",
+              "location_name": "Haiti",
+              "iso3": "HTI",
+              "region_name": "Latin America and Caribbean",
+              "year": 2021,
+              "measure_name": "DALYs",
+              "metric_name": "Rate",
+              "age_name": "Age-standardized",
+              "sex_name": "Both",
+              "cause_name": "Road injuries",
+              "cause_group": "Injuries",
+              "val": 34.08,
+              "lower": 29.99,
+              "upper": 38.85,
+              "unit": "rate per 100,000 population",
+              "demo_note": "Artificial values for software demonstration only. Replace with a licensed IHME/GHDx export before analysis.",
+              "value_label": "34.08 DALYs per 100,000 (synthetic demo)"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "styles": {},
+  "metadata": {
+    "repository": "https://github.com/jltobias/jupyterlite-global-health-gis",
+    "purpose": "Browser-only demonstration template for global health programs.",
+    "data_warning": "All bundled burden values are artificial. Replace with IHME/GHDx data under the applicable user agreement before analytical use.",
+    "created_by": "Starter repository generated with ChatGPT for James L. Tobias, MS, GISP"
+  },
+  "storymap": {
+    "title": "Global health burden data in the browser",
+    "subtitle": "JupyterLite + JupyterGIS + GeoLibre demo workflow",
+    "byline": "James L. Tobias, MS, GISP",
+    "footer": "Synthetic demo values only. Replace with licensed IHME/GHDx estimates.",
+    "theme": "dark",
+    "showMarkers": true,
+    "markerColor": "#3fb1ce",
+    "inset": false,
+    "chapters": [
+      {
+        "id": "intro",
+        "title": "A global teaching layer",
+        "description": "Start with a lightweight global point layer so the example opens quickly in the browser.",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            8.0,
+            12.0
+          ],
+          "zoom": 1.15,
+          "pitch": 0,
+          "bearing": 0
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [
+          {
+            "layerId": "layer_malaria",
+            "opacity": 0.85,
+            "duration": 500
+          }
+        ],
+        "onChapterExit": []
+      },
+      {
+        "id": "ssa",
+        "title": "Program focus: Sub-Saharan Africa",
+        "description": "Use country and regional filters to discuss communicable, maternal, newborn, nutritional, NCD, and injury priorities.",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            20.0,
+            0.0
+          ],
+          "zoom": 2.8,
+          "pitch": 0,
+          "bearing": 0
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [
+          {
+            "layerId": "layer_malaria",
+            "opacity": 0.85,
+            "duration": 500
+          }
+        ],
+        "onChapterExit": []
+      },
+      {
+        "id": "south_asia",
+        "title": "Program focus: South Asia",
+        "description": "Compare trends and causes using the notebook pipeline, then publish a GeoLibre story map for stakeholders.",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            80.0,
+            20.0
+          ],
+          "zoom": 3.2,
+          "pitch": 0,
+          "bearing": 0
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [
+          {
+            "layerId": "layer_lower_respiratory_infections",
+            "opacity": 0.85,
+            "duration": 500
+          }
+        ],
+        "onChapterExit": []
+      }
+    ]
+  },
+  "widgets": [
+    {
+      "id": "w_layer_malaria",
+      "layerId": "layer_malaria",
+      "type": "bar",
+      "category": "region_name",
+      "aggregation": "mean",
+      "valueField": "val",
+      "title": "Mean demo DALY rate by region: Malaria"
+    },
+    {
+      "id": "w_layer_lower_respiratory_infections",
+      "layerId": "layer_lower_respiratory_infections",
+      "type": "bar",
+      "category": "region_name",
+      "aggregation": "mean",
+      "valueField": "val",
+      "title": "Mean demo DALY rate by region: Lower respiratory infections"
+    },
+    {
+      "id": "w_layer_ischemic_heart_disease",
+      "layerId": "layer_ischemic_heart_disease",
+      "type": "bar",
+      "category": "region_name",
+      "aggregation": "mean",
+      "valueField": "val",
+      "title": "Mean demo DALY rate by region: Ischemic heart disease"
+    },
+    {
+      "id": "w_layer_road_injuries",
+      "layerId": "layer_road_injuries",
+      "type": "bar",
+      "category": "region_name",
+      "aggregation": "mean",
+      "valueField": "val",
+      "title": "Mean demo DALY rate by region: Road injuries"
+    }
+  ],
+  "dashboardColumns": 2
+}
