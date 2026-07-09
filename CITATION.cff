@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: JupyterLite Global Health GIS
+authors:
+  - family-names: Tobias
+    given-names: James L.
+message: "If you use this teaching repository, please cite it and cite all public health datasets used in derived examples."
+type: software
+license: MIT
+repository-code: "https://github.com/jltobias/jupyterlite-global-health-gis"
+abstract: "Browser-only geospatial demonstrations for global health programs using JupyterLite, JupyterGIS, and GeoLibre."
+keywords:
+  - JupyterLite
+  - JupyterGIS
+  - GeoLibre
+  - global health
+  - geospatial data science
+  - Global Burden of Disease
