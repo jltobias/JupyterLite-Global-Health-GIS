@@ -1,0 +1,82 @@
+name: Deploy JupyterLite to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Required by actions/deploy-pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Avoid overlapping Pages deployments from multiple pushes.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  PYTHON_VERSION: "3.11"
+  CONTENT_DIR: content
+  OUTPUT_DIR: dist
+
+jobs:
+  build:
+    name: Build JupyterLite site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+
+      # jupyterlite-xeus uses micromamba to resolve/build the WebAssembly
+      # xeus-python environment described by environment.yml.
+      - name: Set up micromamba for xeus-python
+        uses: mamba-org/setup-micromamba@v2
+        with:
+          micromamba-version: "2.0.5-0"
+          init-shell: bash
+
+      - name: Install JupyterLite build tools
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install \
+            jupyterlite-core \
+            jupyterlite-xeus \
+            jupyterlab
+
+      - name: Show JupyterLite version
+        run: |
+          jupyter lite --version
+
+      - name: Build static site
+        run: |
+          jupyter lite build \
+            --contents "${CONTENT_DIR}" \
+            --output-dir "${OUTPUT_DIR}"
+          touch "${OUTPUT_DIR}/.nojekyll"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ env.OUTPUT_DIR }}
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy artifact to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
